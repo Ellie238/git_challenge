@@ -1,0 +1,59 @@
+2mter@LAPTOP-21T64JE8 MINGW64 ~
+$ cd "C:\Users\2mter\SAMURAI_kadai\Kadai_Git3"
+
+2mter@LAPTOP-21T64JE8 MINGW64 ~/SAMURAI_kadai/Kadai_Git3
+$ mkdir git_challenge
+
+2mter@LAPTOP-21T64JE8 MINGW64 ~/SAMURAI_kadai/Kadai_Git3
+$ cd git_challenge
+
+2mter@LAPTOP-21T64JE8 MINGW64 ~/SAMURAI_kadai/Kadai_Git3/git_challenge
+$ pwd
+/c/Users/2mter/SAMURAI_kadai/Kadai_Git3/git_challenge
+
+2mter@LAPTOP-21T64JE8 MINGW64 ~/SAMURAI_kadai/Kadai_Git3/git_challenge
+$ git init
+Initialized empty Git repository in C:/Users/2mter/SAMURAI_kadai/Kadai_Git3/git_challenge/.git/
+
+2mter@LAPTOP-21T64JE8 MINGW64 ~/SAMURAI_kadai/Kadai_Git3/git_challenge (main)
+$ touch hello_world.txt
+
+2mter@LAPTOP-21T64JE8 MINGW64 ~/SAMURAI_kadai/Kadai_Git3/git_challenge (main)
+$ echo "Hello, world!" >> hello_world.txt
+
+2mter@LAPTOP-21T64JE8 MINGW64 ~/SAMURAI_kadai/Kadai_Git3/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+2mter@LAPTOP-21T64JE8 MINGW64 ~/SAMURAI_kadai/Kadai_Git3/git_challenge (main)
+$ git commit -m "コミット1"
+[main (root-commit) 2629b77] コミット1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+2mter@LAPTOP-21T64JE8 MINGW64 ~/SAMURAI_kadai/Kadai_Git3/git_challenge (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+2mter@LAPTOP-21T64JE8 MINGW64 ~/SAMURAI_kadai/Kadai_Git3/git_challenge (main)
+$ echo "こんにちは、世界！" >> hello_world.txt
+
+2mter@LAPTOP-21T64JE8 MINGW64 ~/SAMURAI_kadai/Kadai_Git3/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+2mter@LAPTOP-21T64JE8 MINGW64 ~/SAMURAI_kadai/Kadai_Git3/git_challenge (main)
+$ git commit -m "コミット2"
+[main 0aeb352] コミット2
+ 1 file changed, 1 insertion(+)
+
+2mter@LAPTOP-21T64JE8 MINGW64 ~/SAMURAI_kadai/Kadai_Git3/git_challenge (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+2mter@LAPTOP-21T64JE8 MINGW64 ~/SAMURAI_kadai/Kadai_Git3/git_challenge (main)
+$ git log --oneline
+0aeb352 (HEAD -> main) コミット2
+2629b77 コミット1
